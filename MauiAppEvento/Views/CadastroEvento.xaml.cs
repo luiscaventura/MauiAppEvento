@@ -23,11 +23,16 @@ public partial class CadastroEvento : ContentPage
 		{
 			Evento f = new Evento
 			{
-				NumeroParticipantes = Convert.ToInt32(stp_participantes.Value),
+				NumeroParticipantes = Convert.ToDouble(stp_participantes.Value),
 				DataInicio = dtpck_inicio.Date,
-                DataTermino = dtpck_termino.Date,
+				DataTermino = dtpck_termino.Date,
+				Local = txt_local.Text,
+				Nome = txt_nome.Text,
+				Custo = Convert.ToDouble(txt_custo.Text),
 
-            };
+
+			};
+
 
             
             await Navigation.PushAsync(new EventoCadastrado()
