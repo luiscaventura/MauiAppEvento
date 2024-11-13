@@ -13,6 +13,8 @@ namespace MauiAppEvento
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("calibri.ttf", "Calibri");
+                    fonts.AddFont("Roboto-Black.ttf", "Roboto");
                 });
 
 #if DEBUG
